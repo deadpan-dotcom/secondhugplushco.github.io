@@ -193,3 +193,8 @@ h2 {
     margin-top: 10px;
     opacity: 0.95;
 }
+
+.card h2 {
+    margin-top: 0;
+    color: #6D4C41;
+}
