@@ -239,3 +239,66 @@ h2 {
     top: 10px;
     left: 15px;
 }
+
+/* ===== PLUSH TABLE ===== */
+
+.table-card {
+    overflow-x: auto;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 600px;
+}
+
+/* each row */
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1.8fr 0.8fr;
+    gap: 10px;
+
+    padding: 12px 14px;
+
+    background: #fff;
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+
+    transition: 0.2s ease;
+}
+
+.row:hover {
+    transform: translateY(-2px);
+}
+
+/* header row */
+.row.header {
+    background: #C97C7C;
+    color: white;
+    font-weight: bold;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* subtle stitched feel */
+.row {
+    border: 1px dashed rgba(0,0,0,0.08);
+}
+
+/* responsive tweak */
+@media (max-width: 768px) {
+    .table {
+        min-width: 100%;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .row.header {
+        display: none;
+    }
+}
