@@ -156,3 +156,8 @@ h2 {
 .logo-link {
     display: inline-block;
 }
+
+.logo-link:hover {
+    opacity: 0.85;
+    transition: 0.2s ease;
+}
