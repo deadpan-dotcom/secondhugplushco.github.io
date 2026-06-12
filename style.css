@@ -1,4 +1,4 @@
-/* ===== GENERAL ===== */
+/* ===== BASE ===== */
 
 body {
     font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 18px;
 
     padding: 12px 20px;
     background: rgba(201, 124, 124, 0.95);
@@ -33,15 +33,13 @@ body {
     text-decoration: none;
     padding: 8px 14px;
     border-radius: 10px;
-    transition: all 0.2s ease;
-    font-size: 0.95rem;
+    transition: 0.2s ease;
 }
 
 .nav a:hover {
     background: rgba(255,255,255,0.18);
 }
 
-/* CTA button */
 .nav-cta {
     background: #A3B18A;
     font-weight: bold;
@@ -50,26 +48,56 @@ body {
 .nav-cta:hover {
     background: #8fa377;
 }
-/* ===== HEADER ===== */
 
-header {
+/* ===== HERO ===== */
+
+.hero {
     background: #C97C7C;
     color: white;
     text-align: center;
-    padding: 70px 20px;
+
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header h1 {
+.hero-brand {
+    text-decoration: none;
+    color: inherit;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    transition: 0.2s ease;
+}
+
+.hero-brand:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.hero-logo {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
     margin: 0;
     font-size: 3rem;
 }
 
-header p {
-    margin-top: 10px;
+.hero-subtitle {
+    margin-top: 12px;
     font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 500px;
 }
 
-/* ===== CONTENT SECTIONS ===== */
+/* ===== SECTIONS ===== */
 
 section {
     max-width: 900px;
@@ -131,89 +159,17 @@ h2 {
     .nav {
         flex-wrap: wrap;
         gap: 10px;
-        padding: 12px;
     }
 
-    header {
-        padding: 50px 20px;
-    }
-
-    header h1 {
+    .hero h1 {
         font-size: 2rem;
     }
 
-    header p {
+    .hero-subtitle {
         font-size: 1rem;
     }
 
     section {
         padding: 30px 15px;
     }
-    
-}
-.logo {
-    max-width: 180px;
-    height: auto;
-    display: block;
-    margin: 0 auto 15px auto;
-}
-
-.logo-link {
-    display: inline-block;
-}
-
-.logo-link:hover {
-    opacity: 0.85;
-    transition: 0.2s ease;
-}
-
-/* ===== HERO BRAND BLOCK ===== */
-
-.hero {
-    background: #C97C7C;
-    color: white;
-    text-align: center;
-    padding: 90px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* clickable brand container */
-.hero-brand {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-
-/* logo styling */
-.hero-logo {
-    max-width: 180px;
-    width: 100%;
-    height: auto;
-}
-
-/* brand name */
-.hero h1 {
-    margin: 0;
-    font-size: 3rem;
-    letter-spacing: 0.5px;
-}
-
-/* subtitle */
-.hero-subtitle {
-    margin-top: 15px;
-    font-size: 1.25rem;
-    opacity: 0.95;
-    max-width: 500px;
-}
-
-/* subtle hover feedback */
-.hero-brand:hover {
-    opacity: 0.9;
-    transform: translateY(-1px);
-    transition: all 0.2s ease;
 }
