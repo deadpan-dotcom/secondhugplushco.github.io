@@ -173,3 +173,71 @@ h2 {
         padding: 30px 15px;
     }
 }
+
+/* ===== BEFORE / AFTER SLIDER ===== */
+
+.ba-card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.ba-slider {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 420px;
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+/* images stacked */
+.ba-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* AFTER sits on top and gets clipped */
+.after {
+    clip-path: inset(0 50% 0 0);
+}
+
+/* slider input */
+.ba-range {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80%;
+    z-index: 5;
+
+    accent-color: #A3B18A;
+}
+
+/* fake plush handle */
+.ba-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 4px;
+    height: 100%;
+
+    background: rgba(255,255,255,0.7);
+    cursor: ew-resize;
+
+    transform: translateX(-50%);
+
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+}
