@@ -203,3 +203,39 @@ h2 {
 .btn {
     font-size: 1.05rem;
 }
+
+/* ===== TESTIMONIALS ===== */
+
+.testimonial {
+    max-width: 700px;
+    margin: 18px auto;
+    text-align: left;
+
+    position: relative;
+}
+
+/* quote styling */
+.testimonial p {
+    font-style: italic;
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+/* name styling */
+.testimonial-name {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #6D4C41;
+}
+
+/* subtle plush quote mark */
+.testimonial::before {
+    content: "“";
+    font-size: 3rem;
+    color: rgba(201, 124, 124, 0.3);
+
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
