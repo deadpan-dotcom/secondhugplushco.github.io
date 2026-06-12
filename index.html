@@ -7,6 +7,24 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+  <script>
+const slider = document.querySelector('.ba-range');
+const afterImage = document.querySelector('.after');
+const handle = document.querySelector('.ba-handle');
+
+function updateSlider(value) {
+    afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+    handle.style.left = value + '%';
+}
+
+slider.addEventListener('input', (e) => {
+    updateSlider(e.target.value);
+});
+
+// initialize
+updateSlider(slider.value);
+</script>
+  
 <body>
 
 <!-- NAV -->
