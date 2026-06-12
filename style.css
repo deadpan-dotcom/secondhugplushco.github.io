@@ -161,3 +161,54 @@ h2 {
     opacity: 0.85;
     transition: 0.2s ease;
 }
+
+/* ===== HERO BRAND BLOCK ===== */
+
+.hero {
+    background: #C97C7C;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* clickable brand container */
+.hero-brand {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* logo styling */
+.hero-logo {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+}
+
+/* brand name */
+.hero h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+}
+
+/* subtitle */
+.hero-subtitle {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 500px;
+}
+
+/* subtle hover feedback */
+.hero-brand:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
