@@ -15,27 +15,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    padding: 15px;
-    background: #C97C7C;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    gap: 20px;
+
+    padding: 12px 20px;
+    background: rgba(201, 124, 124, 0.95);
+    backdrop-filter: blur(6px);
+
     position: sticky;
     top: 0;
     z-index: 100;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
 .nav a {
     color: white;
     text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 8px;
+    padding: 8px 14px;
+    border-radius: 10px;
     transition: all 0.2s ease;
+    font-size: 0.95rem;
 }
 
 .nav a:hover {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.18);
 }
 
+/* CTA button */
 .nav-cta {
     background: #A3B18A;
     font-weight: bold;
@@ -44,7 +50,6 @@ body {
 .nav-cta:hover {
     background: #8fa377;
 }
-
 /* ===== HEADER ===== */
 
 header {
