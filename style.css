@@ -199,3 +199,7 @@ h2 {
     flex-direction: column;
     gap: 6px;
 }
+
+.btn {
+    font-size: 1.05rem;
+}
